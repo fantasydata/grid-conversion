@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsDataIO.GRidConversion", "SportsDataIO.GRidConversion.csproj", "{DB1A8C00-F1F4-4967-911A-1B208E2DE33E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsdataIO.GRidConversion.Tests", "..\SportsdataIO.GRidConversion.Tests\SportsdataIO.GRidConversion.Tests.csproj", "{290A228B-88AA-413D-B6B7-41E76C3AA74C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB1A8C00-F1F4-4967-911A-1B208E2DE33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1A8C00-F1F4-4967-911A-1B208E2DE33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1A8C00-F1F4-4967-911A-1B208E2DE33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1A8C00-F1F4-4967-911A-1B208E2DE33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290A228B-88AA-413D-B6B7-41E76C3AA74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290A228B-88AA-413D-B6B7-41E76C3AA74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290A228B-88AA-413D-B6B7-41E76C3AA74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290A228B-88AA-413D-B6B7-41E76C3AA74C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB9B4B38-6AD5-42DA-99F4-D5D055744F05}
+	EndGlobalSection
+EndGlobal
