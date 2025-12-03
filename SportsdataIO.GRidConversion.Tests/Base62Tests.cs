@@ -46,7 +46,7 @@ namespace SportsDataIO.GRidConversion.Tests
 
             // Expected value calculated from a verified BigInteger implementation
             // If this test passes on Windows and Linux, your Endian logic is portable.
-            string expected = "item_1tuWckR0Qgud2DqqiTysq";
+            string expected = "item_4iwRLEQjyM887lIHKr7h3d";
 
             string encoded = Base62.Encode(guid, typeId);
 

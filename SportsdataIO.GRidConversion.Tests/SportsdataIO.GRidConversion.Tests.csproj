@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GRidConversion\SportsDataIO.GRidConversion.csproj" />
+    <ProjectReference Include="..\SportsDataIO.GRidConversion\SportsDataIO.GRidConversion.csproj" />
   </ItemGroup>
 
 </Project>
