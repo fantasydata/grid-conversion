@@ -21,11 +21,11 @@ jobs:
           dotnet-version: '8.0.x' 
 
       - name: Restore dependencies
-        run: dotnet restore SportsdataIO.GRidConversion/SportsdataIO.GRidConversion.csproj
+        run: dotnet restore SportsDataIO.GRidConversion/SportsDataIO.GRidConversion.csproj
         
       - name: Pack the NuGet package
         # Creates the .nupkg file based on your .csproj metadata
-        run: dotnet pack SportsdataIO.GRidConversion/SportsdataIO.GRidConversion.csproj --configuration Release --no-build --output ./nupkg
+        run: dotnet pack SportsDataIO.GRidConversion/SportsDataIO.GRidConversion.csproj --configuration Release --no-build --output ./nupkg
 
       - name: Publish NuGet package
         # Pushes the package to the feed, using the secret API key
