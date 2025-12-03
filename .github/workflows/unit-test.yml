@@ -15,4 +15,4 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Test
-      run: dotnet test SportsdataIO.GRidConversion.Tests\SportsdataIO.GRidConversion.Tests.csproj
+      run: dotnet test SportsdataIO.GRidConversion.Tests/SportsdataIO.GRidConversion.Tests.csproj
