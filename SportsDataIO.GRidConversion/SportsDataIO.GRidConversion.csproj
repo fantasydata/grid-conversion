@@ -4,6 +4,22 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>SportsDataIO</Authors>
+    <Description>A helper library for .NET projects to convert GRid base62 object ids into UUIDs and back</Description>
+    <PackageProjectUrl>https://github.com/fantasydata/grid-conversion</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/fantasydata/grid-conversion</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>GRid;Base62</PackageTags>
+    <Title>SportsDataIO GRid Conversion Kit</Title>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

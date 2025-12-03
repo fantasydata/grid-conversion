@@ -1,0 +1,32 @@
+name: Publish NuGet Package
+
+on:
+  push:
+    # This triggers the workflow on every push to the main branch
+    branches: [ main ] 
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        # Fetches your code from the repo
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        # Installs the .NET 8 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x' 
+
+      - name: Restore dependencies
+        run: dotnet restore
+        
+      - name: Pack the NuGet package
+        # Creates the .nupkg file based on your .csproj metadata
+        run: dotnet pack --configuration Release --no-build --output ./nupkg
+
+      - name: Publish NuGet package
+        # Pushes the package to the feed, using the secret API key
+        run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
